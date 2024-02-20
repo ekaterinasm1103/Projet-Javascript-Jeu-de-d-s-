@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <!-- Ionic icons -->
+            <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="./css/style.css">
+            <title>Jeu de dés</title>
+        </head>
+
+        <body>
+        <!-- Panneau du joueur 0 -->
+            <div class="wrapper clearfix">
+                <div class="player-0-panel active">
+                    <div class="player-name" id="name-0">PLAYER 1</div>
+                    <div class="player-score" id="score-0">43</div>
+                    <div class="player-current-box">
+                        <div class="player-current-label">Current</div>
+                        <div class="player-current-score" id="current-0">11</div>
+                    </div>
+                </div>
+            
+        <!-- Panneau du joueur 1 -->
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">PLAYER 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            
+        <!-- Buttons -->
+                <button class="btn-new"><i class="ion-ios-plus"></i>New game</button>
+                <button class="btn-roll"><i class="ion-ios-loop"></i>Roll Dice</button>
+                <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+        <!-- Entrée pour définir le score gagnant-->
+                <input type="text" id="winningScore" placeholder="Final score">
+        <!--Images -->
+                <img src="./images/dice-5.png" alt="Dice" class="dice" id="dice1">
+            </div>
+        
+            <script src="./js/script.js"></script>
+        </body>
+    </html>
